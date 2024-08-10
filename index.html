@@ -35,9 +35,7 @@
 <script>
 canvas = new fabric.Canvas('c');
 canvas.setOverlayImage('mask.png', canvas.renderAll.bind(canvas));
-
 canvas.selection = false;
-
     
 document.getElementById('imgLoader').onchange = function handleImage(e) {
 var reader = new FileReader();
@@ -47,13 +45,9 @@ imgObj.src = event.target.result;
 imgObj.onload = function () {
 // start fabricJS stuff
             
-var image = new fabric.Image(imgObj);
-           
-canvas.add(image);
-            
-          
-}
-        
+var image = new fabric.Image(imgObj);          
+canvas.add(image);          
+}        
 }
 reader.readAsDataURL(e.target.files[0]);
 }
