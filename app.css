@@ -18,12 +18,12 @@
 
 html {
 font-family: sans-serif;
-background: var(--backgroundcolor);
+background: #fff;
 max-width: 70ch;
 padding: 1em;
 margin: auto;
 line-height: 1.75;
-color: var(--textcolor);
+color: #171717;
 }
 
 img, canvas {
@@ -32,7 +32,7 @@ padding-bottom: 0.2em;
 }
 
 pre {
-background: var(--prebackgroundcolor);
+background: #e4e4e4;
 padding: 2px 4px;
 overflow: auto;
 }
@@ -60,15 +60,15 @@ text-decoration: none;
 }
 
 a:link, a:visited {
-color:  var(--subduedcolor);
+color:  #444444;
 }
 
 a:hover {
-color: var(--highlightcolor);
+color: #a3a3a3;
 }
 
 footer {
-color: var(--subduedcolor);
+color: #444444;
 }
 input[type="file"] {
 display:none;
