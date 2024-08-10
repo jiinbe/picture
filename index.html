@@ -8,8 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="author" content="Ferry Ayunda" />
 <meta name="description" content="Twibbon adalah cara sederhana untuk mengekspresikan dukungan dan partisipasi kita dalam suatu acara atau gerakan." />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/open-fonts@1.1.1/fonts/inter.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+<link rel="stylesheet" href="app.css">
 <style>
 input[type="file"] {
 display:none;
@@ -29,6 +28,8 @@ cursor:pointer;
 <h1>FREE TWIBBON GENERATOR</h1>
 </header>
 
+<main>
+<article>
 <p><canvas class="cvs" id="c" width="700" height="700"></canvas></p>
 <p><input type="file" id="imgLoader" accept="image/*"></p> 
 <p>
@@ -43,6 +44,8 @@ cursor:pointer;
 <li>Jika sudah pas, silahkan klik <strong>Download</strong> dan <strong>Share</strong> media sosial Anda.</li>
 </ol>
 -->
+</article>
+</main>
 <script>
 canvas = new fabric.Canvas('c');
 canvas.setOverlayImage('mask.png', canvas.renderAll.bind(canvas));
