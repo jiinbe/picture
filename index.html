@@ -9,14 +9,7 @@
 <meta name="author" content="Ferry Ayunda" />
 <meta name="description" content="Twibbon adalah cara sederhana untuk mengekspresikan dukungan dan partisipasi kita dalam suatu acara atau gerakan." />
 <link rel="stylesheet" href="app.css">
-<style>
-input[type="file"] {
-display:none;
-}
-button[onclick*="()"] {
-cursor:pointer;
-}
-</style>
+    
 <script src="app/jquery.min.js"></script>
 <script src="app/fabric.min.js"></script>
 <script src="app/FileSaver.js"></script>
@@ -24,10 +17,6 @@ cursor:pointer;
 </head>
 
 <body>
-<header>
-<h1>FREE TWIBBON GENERATOR</h1>
-</header>
-
 <main>
 <article>
 <p><canvas class="cvs" id="c" width="700" height="700"></canvas></p>
@@ -46,6 +35,7 @@ cursor:pointer;
 -->
 </article>
 </main>
+    
 <script>
 canvas = new fabric.Canvas('c');
 canvas.setOverlayImage('mask.png', canvas.renderAll.bind(canvas));
