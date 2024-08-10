@@ -54,7 +54,7 @@ display: block;
 }
 input, button, select, textarea {
 font-family: sans-serif;
-font-size: 80%;
+font-size: inherit;
 font-weight: bold;
 text-transform: uppercase;
 padding: 0.4em;
