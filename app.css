@@ -53,7 +53,7 @@ label {
 display: block;
 }
 input, button, select, textarea {
-font-family: inherit;
+font-family: sans-serif;
 font-size: 80%;
 font-weight: bold;
 text-transform: uppercase;
