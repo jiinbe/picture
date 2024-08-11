@@ -73,6 +73,8 @@ background-color: #1e1f20;
 }
 
 main {
+margin: 5em auto;
+padding: 2em;
 display: flex;
 justify-content: center;
 margin-top: 2rem;
