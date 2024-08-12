@@ -67,6 +67,9 @@ opt.e.preventDefault();
 opt.e.stopPropagation();
 })
 
+var canvasContainer = document.getElementById("canvasWrapper");
+canvas.setWidth(canvasContainer.offsetWidth);
+canvas.setHeight(canvasContainer.offsetHeight);
 	
 $("#download").click(function(){
 $("#c").get(0).toBlob(function(blob){
