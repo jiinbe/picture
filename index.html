@@ -33,7 +33,6 @@ TWIBBON GENERATOR
 <p>
 <button onclick="selectFile()">PILIH FILE</button>
 <button id="download">DOWNLOAD</button>
-<button id="btn" onclick="Remove()">Delete</button>
 </p>
 <h1>Tutorial:</h1>	
 <ol>
@@ -63,10 +62,6 @@ canvas.add(image);
 }
 reader.readAsDataURL(e.target.files[0]);
 }
-
-function Remove() {
-canvas.remove(imgObj);
-}
 	
 canvas.on('mouse:wheel', function(opt) {
 var delta = opt.e.deltaY;
@@ -88,6 +83,15 @@ saveAs(blob, "myIMG.png");
 function selectFile() {
 document.getElementById("imgLoader").click();
 }
+
+var deleteHandler = function removeFunction(obj) {
+var selectedObject = obj.target;
+canvas.remove(selectedObject);
+canvas.renderAll();
+};
+      
+// Using the mouse:down event
+canvas.on("mouse:down", deleteHandler);
 </script>
 </body>
 </html>
