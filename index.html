@@ -7,7 +7,21 @@
 <meta name="author" content="Ferry Ayunda" />
 <meta name="description" content="Twibbon adalah cara sederhana untuk mengekspresikan dukungan dan partisipasi kita dalam suatu acara atau gerakan." />
 <link rel="stylesheet" href="app.css">
+<style>
+#canvasWrapper {
+border: 1px solid #d0d7de;
+border-radius: 0.25rem;
+margin-bottom: 2rem;
+box-shadow: 0 1px 0 rgba(27, 31, 36, 0.1);
+height: 100%;
+min-height: 30rem;
+}
 
+canvas {
+height: 100%;
+width: 100%;
+}
+</style>
 <script src="app/jquery.min.js"></script>
 <script src="app/fabric.min.js"></script>
 <script src="app/FileSaver.js"></script>
@@ -21,7 +35,9 @@ TWIBBON GENERATOR
 </nav>
 	
 <main>
-<p><canvas width="650" height="650" id="c"></canvas></p>
+<p id="canvasWrapper"
+<canvas id="c"></canvas>
+</p>
 <p><input type="file" id="imgLoader" accept="image/*"></p> 
 <p>
 <button onclick="selectFile()">PILIH FILE</button>
