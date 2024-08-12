@@ -8,7 +8,7 @@
 <meta name="description" content="Twibbon adalah cara sederhana untuk mengekspresikan dukungan dan partisipasi kita dalam suatu acara atau gerakan." />
 <link rel="stylesheet" href="app.css">
 <style>
-#canvasWrapper {
+#c {
 border: 1px solid #d0d7de;
 border-radius: 0.25rem;
 margin-bottom: 2rem;
@@ -56,6 +56,8 @@ canvas = new fabric.Canvas('c');
 canvas.setOverlayImage('pain.png', canvas.renderAll.bind(canvas));
 canvas.backgroundColor = 'rgba(0,0,255,0.3)';
 canvas.selection = false;
+canvas.setWidth(canvas.offsetWidth);
+canvas.setHeight(canvas.offsetHeight);
 
 document.getElementById('imgLoader').onchange = function handleImage(e) {
 var reader = new FileReader();
@@ -64,9 +66,6 @@ var imgObj = new Image();
 imgObj.src = event.target.result;
 imgObj.onload = function () {
 // start fabricJS stuff
-var canvasContainer = document.getElementById("canvasWrapper");
-canvas.setWidth(canvasContainer.offsetWidth);
-canvas.setHeight(canvasContainer.offsetHeight);
             
 var image = new fabric.Image(imgObj);          
 canvas.add(image);          
