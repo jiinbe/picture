@@ -84,6 +84,24 @@ function selectFile() {
 document.getElementById("imgLoader").click();
 }
 
+// When a selection is being made
+canvas.on({
+'selection:created': () => {
+delBtn.style.display = 'inline-block'
+}
+})
+
+// When a selection is cleared
+canvas.on({
+'selection:cleared': () => {
+delBtn.style.display = 'none'
+}
+})
+
+// Rmove the active object on clicking the delete button
+delBtn.addEventListener('click', e => {
+canvas.remove(canvas.getActiveObject())
+})
 </script>
 </body>
 </html>
