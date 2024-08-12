@@ -68,7 +68,14 @@ canvas.setZoom(zoom);
 opt.e.preventDefault();
 opt.e.stopPropagation();
 })
-    
+
+canvas.item(0).set({
+borderColor: 'gray',
+cornerColor: 'black',
+cornerSize: 12,
+transparentCorners: true
+});
+	
 $("#download").click(function(){
 $("#c").get(0).toBlob(function(blob){
 saveAs(blob, "myIMG.png");
