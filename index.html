@@ -16,6 +16,9 @@ display:none;
 button[onclick*="()"] {
 cursor:pointer;
 }
+canvas {
+width: 100%;
+max-width: 720px;}
 </style>
 <script src="app/jquery.min.js"></script>
 <script src="app/fabric.min.js"></script>
@@ -32,7 +35,7 @@ cursor:pointer;
 </nav>
 	
 
-<p><canvas class="cvs" id="c" width="700" height="700"></canvas></p>
+<p><canvas class="cvs" id="c"></canvas></p>
 <p><input type="file" id="imgLoader" accept="image/*"></p> 
 <p>
 <button onclick="selectFile()">PILIH FILE</button>
