@@ -86,6 +86,7 @@ document.getElementById("imgLoader").click();
 }
 
 var delBtn = document.getElementById('delete');
+delBtn.style.display = 'none'
 
 // When a selection is being made
 canvas.on({
@@ -97,7 +98,7 @@ delBtn.style.display = 'inline-block'
 // When a selection is cleared
 canvas.on({
 'selection:cleared': () => {
-delBtn.style.display = 'inline-block'
+delBtn.style.display = 'none'
 }
 })
 
