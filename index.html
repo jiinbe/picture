@@ -42,7 +42,7 @@ canvas = new fabric.Canvas('c');
 canvas.setOverlayImage('pain.png', canvas.renderAll.bind(canvas));
 canvas.backgroundColor = 'rgba(0,0,255,0.3)';
 canvas.selection = false;
-    
+
 document.getElementById('imgLoader').onchange = function handleImage(e) {
 var reader = new FileReader();
 reader.onload = function (event) { console.log('fdsf');
@@ -67,10 +67,6 @@ if (zoom < 0.01) zoom = 0.01;
 canvas.setZoom(zoom);
 opt.e.preventDefault();
 opt.e.stopPropagation();
-opt.e.borderColor: 'gray',
-opt.e.cornerColor: 'black',
-opt.e.cornerSize: 12,
-opt.e.transparentCorners: true
 })
 
 	
