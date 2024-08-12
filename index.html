@@ -33,6 +33,7 @@ TWIBBON GENERATOR
 <p>
 <button onclick="selectFile()">PILIH FILE</button>
 <button id="download">DOWNLOAD</button>
+<button id="btn" onclick="Remove()">Delete</button>
 </p>
 <h1>Tutorial:</h1>	
 <ol>
@@ -74,6 +75,9 @@ opt.e.preventDefault();
 opt.e.stopPropagation();
 })
 
+function Remove() {
+canvas.clear().renderAll();
+}
 	
 $("#download").click(function(){
 $("#c").get(0).toBlob(function(blob){
