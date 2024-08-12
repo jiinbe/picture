@@ -31,4 +31,14 @@ padding: 0;
 .posts li {
 margin-bottom: 8px;
 }
-.posts li span{display:block;font-size:90%;}#menu li{display:inline-block;margin-right:8px;}.footnotes{font-size:90%;}</style>
+.posts li span {
+display: block;
+font-size: 90%;
+}
+#menu li {
+display: inline-block;
+margin-right: 8px;
+}
+.footnotes {
+font-size: 90%;
+}
