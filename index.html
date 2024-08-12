@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="author" content="Ferry Ayunda" />
 <meta name="description" content="Twibbon adalah cara sederhana untuk mengekspresikan dukungan dan partisipasi kita dalam suatu acara atau gerakan." />
-<link rel="stylesheet" href="https://simpleblogs.org/style.css">
+<link rel="stylesheet" href="app.css">
 <style>
 input[type="file"] {
 display:none;
@@ -16,10 +16,6 @@ display:none;
 button[onclick*="()"] {
 cursor:pointer;
 }
-canvas {
-width: 700px;
-height: 700px;
-max-width: 720px;}
 </style>
 <script src="app/jquery.min.js"></script>
 <script src="app/fabric.min.js"></script>
@@ -30,12 +26,10 @@ max-width: 720px;}
 <body>
 
 <nav>
-<header>
 TWIBBON GENERATOR
-</header>
 </nav>
 	
-
+<main>
 <p><canvas width="700" height="700" id="c"></canvas></p>
 <p><input type="file" id="imgLoader" accept="image/*"></p> 
 <p>
@@ -48,8 +42,7 @@ TWIBBON GENERATOR
 <li>Lalu pas kan foto Anda dalam bingkai dengan cara menggeser foto.</li>
 <li>Jika sudah pas, silahkan klik <strong>Download</strong> dan <strong>Share</strong> media sosial Anda.</li>
 </ol>
-
-
+</main>
 
 <script>
 canvas = new fabric.Canvas('c');
