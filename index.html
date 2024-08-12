@@ -28,16 +28,10 @@ cursor:pointer;
 <nav>
 <header>
 <h1>TWIBBON GENERATOR</h1>
-<p></p>
 </header>
 </nav>
 	
-<div class="container">
-<div class="row">
-<div class="col-md-12">
-<div class="panel panel-primary">
-<div class="panel-heading">AKTYWNE</div>
-<div class="list-group">
+
 <p><canvas class="cvs" id="c" width="700" height="700"></canvas></p>
 <p><input type="file" id="imgLoader" accept="image/*"></p> 
 <p>
@@ -50,15 +44,9 @@ cursor:pointer;
 <li>Lalu pas kan foto Anda dalam bingkai dengan cara menggeser foto.</li>
 <li>Jika sudah pas, silahkan klik <strong>Download</strong> dan <strong>Share</strong> media sosial Anda.</li>
 </ol>
-</div>
-</div>
-</div>
-</div>
-</div>
 
-<footer class="container-fluid text-center">
-<p>Twibbon Generator by <a href="#">Ferry Ayunda</a>.</p>
-</footer>
+
+
 <script>
 canvas = new fabric.Canvas('c');
 canvas.setOverlayImage('mask.png', canvas.renderAll.bind(canvas));
