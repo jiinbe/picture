@@ -84,14 +84,6 @@ function selectFile() {
 document.getElementById("imgLoader").click();
 }
 
-var deleteHandler = function removeFunction(obj) {
-var selectedObject = obj.target;
-canvas.remove(selectedObject);
-canvas.renderAll();
-};
-      
-// Using the mouse:down event
-canvas.on("mouse:down", deleteHandler);
 </script>
 </body>
 </html>
