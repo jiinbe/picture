@@ -33,7 +33,7 @@ TWIBBON GENERATOR
 <p>
 <button onclick="selectFile()">PILIH FILE</button>
 <button id="download">DOWNLOAD</button>
-<button id="delete">Delete</button>
+<button id="delete" style="display:none">Delete</button>
 </p>
 <h1>Tutorial:</h1>	
 <ol>
@@ -85,27 +85,41 @@ function selectFile() {
 document.getElementById("imgLoader").click();
 }
 
-var delBtn = document.getElementById('delete');
+const deleteBtn = document.getElementById("delete");
+
+deleteBtn.addEventListener("click", function () {
+  deleteSelectedObjects();
+});
+
+canvas.on("selection:created", function () {
+  deleteBtn.style.display = "inline-block";
+});
+
+canvas.on("selection:cleared", function () {
+  deleteBtn.style.display = "none";
+});
+	
+//var delBtn = document.getElementById('delete');
 // delBtn.style.display = 'none'
 
 // When a selection is being made
-canvas.on({
-'selection:created': () => {
-delBtn.style.display = 'inline-block'
-}
-})
+// canvas.on({
+// 'selection:created': () => {
+// delBtn.style.display = 'inline-block'
+// }
+// })
 
 // When a selection is cleared
-canvas.on({
-'selection:cleared': () => {
-delBtn.style.display = 'inline-block'
-}
-})
+// canvas.on({
+// 'selection:cleared': () => {
+// delBtn.style.display = 'inline-block'
+// }
+// })
 
 // Rmove the active object on clicking the delete button
-delBtn.addEventListener('click', e => {
-canvas.remove(canvas.getActiveObject())
-})
+// delBtn.addEventListener('click', e => {
+// canvas.remove(canvas.getActiveObject())
+// })
 </script>
 </body>
 </html>
