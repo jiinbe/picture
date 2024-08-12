@@ -65,7 +65,7 @@ reader.readAsDataURL(e.target.files[0]);
 }
 
 function Remove() {
-canvas.clear().renderAll();
+canvas.remove(imgObj).renderAll();
 }
 	
 canvas.on('mouse:wheel', function(opt) {
