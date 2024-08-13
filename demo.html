@@ -21,7 +21,6 @@ display:table;
 background:#fff;
 display:table-cell;
 width:48%;
-padding:12px;
 }
 
 input[type="file"] {
@@ -46,11 +45,14 @@ cursor:pointer;
 </p>
 </div>
 <div class="row">
+<p>
 <button id="hide" onclick="selectFile()">PILIH FILE</button>
 <button id="download" disabled>DOWNLOAD</button>
 <button id="delete">Delete</button>
+</p>
 </div>   
 </div>
+	
 <script>
 canvas = new fabric.Canvas('c');
 canvas.setOverlayImage('filter.png', canvas.renderAll.bind(canvas));
