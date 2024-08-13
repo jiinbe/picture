@@ -8,39 +8,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <style type="text/css">
 /* Layout: */
-
-.col-main {
-flex: 3;  
-}  
-
-.col-complementary {
-flex: 1;  
-}
-
-/* Responsive: */
-
-@media only screen and (min-width: 640px) {
-.layout {
-display: flex;
-}
-}
-
-/* etc */
-
-body {
-margin: 1.5em;
-}
-
-.container {
-max-width: 60em;
-margin-right: auto;
-margin-left: auto;
+body{
+margin:0;
+padding:0;
 }
 
 .col {
-padding: 1em;
-margin: 0 2px 2px 0;
-background: #fdfdff;
+display:table;
+}
+
+.row {
+background:#ccc;
+display:table-cell;
+width:48%;
+padding:12px;
 }
 
 input[type="file"] {
