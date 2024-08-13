@@ -44,7 +44,7 @@ TWIBBON GENERATOR
 <p><canvas width="750" height="750" id="c"></canvas></p>
 <p><input type="file" id="imgLoader" accept="image/*"></p> 
 <p>
-<button onclick="selectFile()">PILIH FILE</button>
+<button id="hide" onclick="selectFile()">PILIH FILE</button>
 <button id="download">DOWNLOAD</button>
 <button id="delete">Delete</button>
 </p>
@@ -97,6 +97,12 @@ function selectFile() {
 document.getElementById("imgLoader").click();
 }
 
+$(document).ready(function(){
+$("#hide").click(function(){
+$("#download").hide();
+});
+});
+	
 $("#delete").click(function(){
 canvas.isDrawingMode = false;
 deleteObjects();
