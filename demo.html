@@ -44,12 +44,13 @@ cursor:pointer;
 <canvas width="600" height="600" id="c"></canvas>
 <input type="file" id="imgLoader" oninput="checkInput()" accept="image/*">
 </p>
-<p class="col col-complementary" role="complementary">
+</div>
+<div class="row">
 <button id="hide" onclick="selectFile()">PILIH FILE</button>
 <button id="download" disabled>DOWNLOAD</button>
 <button id="delete">Delete</button>
-</p>  
 </div>   
+</div>
 <script>
 canvas = new fabric.Canvas('c');
 canvas.setOverlayImage('filter.png', canvas.renderAll.bind(canvas));
