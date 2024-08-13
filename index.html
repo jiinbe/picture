@@ -85,6 +85,12 @@ function selectFile() {
 document.getElementById("imgLoader").click();
 }
 
+$("#delete").click(function(){
+canvas.isDrawingMode = false;
+deleteObjects();
+});
+
+
 </script>
 </body>
 </html>
