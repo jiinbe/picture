@@ -8,20 +8,121 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <style type="text/css">
 /* Layout: */
-body{
-margin:0;
-padding:0;
+* {
+box-sizing: border-box;
 }
 
-.col {
-display:table;
+.clear:after {
+content: "";
+display: table;
+clear: both;
 }
 
-.row {
-background:#fff;
-display:table-cell;
-width:48%;
-padding: 12px;
+.wrap {
+width: 100%;
+}
+
+.left {
+width: 40%;
+background-color: #CCC;
+display: table-cell;
+text-align: center;
+background: url(http://media.moddb.com/images/mods/1/21/20368/auto/1360149072star_wars_battlefront_elite_squadron-normal.jpg) no-repeat center center;
+background-size: cover;
+padding: 1em;
+}
+
+.left:before {
+content: '';
+display: inline-block;
+height: 100%; 
+vertical-align: middle;
+margin-right: -0.25em;
+}
+
+.left article {
+background-color: #FFF;
+border-radius: 5px;
+padding: 1em;
+display: inline-block;
+vertical-align: middle;
+}
+
+.left article ul {
+margin: 1em 0;
+padding: 0;
+list-style: none;
+}
+
+.left article .img-wrap {
+width: 200px;
+height: 200px;
+background-color: #000;
+border-radius: 100%;
+overflow: hidden;
+line-height: 200px;
+margin: 0 auto 1em;
+}
+
+.left article .img-wrap img {
+width: 200px;
+height: auto;
+vertical-align: middle;
+}
+
+.btn {
+display: inline-block;
+border: none;
+font-weight: 700;
+background-color: #CCC;
+text-decoration: none;
+cursor: hand;
+cursor: pointer;
+transition: all .3s ease-in;
+text-transform: uppercase;
+padding: .7em 1.8em;
+font-size: .9em;
+border-radius: 2em;
+background-color: #A5DE37;
+color: #FFF;
+}
+
+.btn:hover {
+background-color: #91C03D;
+}
+
+.right {
+width: 60%;
+background-color: #FFF;
+display: table-cell;
+padding: 2em;
+vertical-align: top;
+font-family: 'Consolas', monospace;
+line-height: 1.5;
+color: #333;
+}
+
+@media (max-width: 600px) {
+  
+.left {
+display: block;
+width: 100%;
+}
+  
+.left article {
+display: block;
+text-align: left;
+}
+  
+.left article .img-wrap {
+float: left;
+}
+  
+.left article .content {
+float: left;
+padding: 1em 1em 1em 3em;
+}
+  
 }
 
 input[type="file"] {
